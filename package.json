@@ -1,0 +1,19 @@
+{
+  "name": "carecru-journal",
+  "version": "1.0.0",
+  "description": "CareCru SPA interview projec",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwkosman/carecru-journal.git"
+  },
+  "author": "Chuck Kosman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwkosman/carecru-journal/issues"
+  },
+  "homepage": "https://github.com/cwkosman/carecru-journal#readme"
+}
