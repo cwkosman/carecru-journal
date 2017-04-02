@@ -12,7 +12,6 @@ module.exports = {
       test: /\.jsx?$/,
       loader: 'babel-loader',
       include: [path.resolve(__dirname, 'src')],
-      options: { presets: ['es2015', 'stage-0', 'react'] }
     }]
   }
 };
