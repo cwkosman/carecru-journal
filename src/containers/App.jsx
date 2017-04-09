@@ -1,23 +1,22 @@
 import React from 'react'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Test from '../components/Test.jsx'
 import EntryForm from '../components/EntryForm.jsx'
-import * as TestActions from '../actions';
+import * as EntryActions from '../actions';
 
-const App = ({test, actions}) => (
+const App = ({ entries, actions }) => (
   <div>
-    <Test TestProps={test} Actions={actions}/>
-    <EntryForm />
+    <p>Hello</p>
+    <EntryForm Actions={actions}/>
   </div>
 )
 
 const mapStateToProps = state => ({
-  test: state.test
+  entries: state.entries
 });
 
 const mapDispatchToProps = dispatch => ({
-  actions: bindActionCreators(TestActions, dispatch)
+  actions: bindActionCreators(EntryActions, dispatch)
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

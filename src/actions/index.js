@@ -1,8 +1,9 @@
-export function changeGreeting(){
+export function saveEntry(entryHappiness, entryBody){
   return {
-      type: 'TEST_ACTION',
+      type: 'SUBMIT_ENTRY',
       payload: {
-        greeting: 'Salutations'
+        entryHappiness,
+        entryBody
       }
-    }
   }
+}

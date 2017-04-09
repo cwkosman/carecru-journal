@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
-import test from './test'
+import journal from './journal'
 
 export default combineReducers({
-  test
+  journal
 })

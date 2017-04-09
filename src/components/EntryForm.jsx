@@ -32,5 +32,6 @@ export default class EntryForm extends Component {
 
   _handleClick(e) {
     e.preventDefault();
+    this.props.Actions.saveEntry(this.state.entryHappiness, this.state.entryBody);
   }
 }
