@@ -14,9 +14,9 @@ export default class EntryForm extends Component {
     return (
       <div>
         <form id="entry">
-          <input type="range" name="entry-happiness" min="-10" max="10" value={this.state.entryHappiness} onChange={this._handleChange('entryHappiness').bind(this)} />
-          <textarea name="entry-body" placeholder="Dear journal..." rows="10" cols="50" value={this.state.entryBody} onChange={this._handleChange('entryBody').bind(this)}></textarea>
-          <button onClick={this._handleClick.bind(this)}>Submit</button>
+          <input ref="entryHappiness" type="range" name="entry-happiness" min="-10" max="10" value={this.state.entryHappiness} onChange={this._handleChange('entryHappiness').bind(this)} />
+          <textarea ref="entryBody" name="entry-body" placeholder="Dear journal..." rows="10" cols="50" value={this.state.entryBody} onChange={this._handleChange('entryBody').bind(this)}></textarea>
+          <button onClick={this._handleSubmit.bind(this)}>Submit</button>
         </form>
       </div>
     );
@@ -30,8 +30,10 @@ export default class EntryForm extends Component {
     }
   }
 
-  _handleClick(e) {
+  _handleSubmit(e) {
     e.preventDefault();
     this.props.Actions.saveEntry(this.state.entryHappiness, this.state.entryBody);
+    this.refs.entryHappiness.value = 0;
+    this.refs.entryBody.value = '';
   }
 }
