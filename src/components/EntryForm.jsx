@@ -23,11 +23,11 @@ export default class EntryForm extends Component {
             <label htmlFor="entry-happiness">Happiness Score</label>
             <label className="entry-happiness-label negative">Negative</label>
             <label className="entry-happiness-label positive">Positive</label>
-            <input ref="entryHappiness" type="range" id="entry-happiness" className="entry-happiness" name="entry-happiness" min="-10" max="10" value={this.state.entryHappiness} onChange={this._handleChange('entryHappiness').bind(this)} />
+            <input ref={(el) => this.range = el} type="range" id="entry-happiness" className="entry-happiness" name="entry-happiness" min="-10" max="10" value={this.state.entryHappiness} onChange={this._handleChange('entryHappiness').bind(this)} />
           </div>
           <div className="form-group">
             <label htmlFor="entry-body">Journal Entry</label>
-            <textarea ref="entryBody" id="entry-body" className="entry-body" name="entry-body" placeholder="Dear journal..." rows="10" cols="50" value={this.state.entryBody} onChange={this._handleChange('entryBody').bind(this)}></textarea>
+            <textarea ref={(el) => this.textarea = el} id="entry-body" className="entry-body" name="entry-body" placeholder="Dear journal..." rows="10" cols="50" value={this.state.entryBody} onChange={this._handleChange('entryBody').bind(this)}></textarea>
           </div>
           <button className="btn btn-success" onClick={this._handleSubmit.bind(this)}>Submit</button>
         </form>
@@ -48,7 +48,5 @@ export default class EntryForm extends Component {
   _handleSubmit(e) {
     e.preventDefault();
     this.props.Actions.saveEntry(this.state.entryHappiness, this.state.entryBody);
-    this.refs.entryHappiness.value = 0;
-    this.refs.entryBody.value = '';
   }
 }

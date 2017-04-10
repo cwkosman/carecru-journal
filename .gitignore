@@ -1,4 +1,5 @@
 node_modules
 tmp
 rethinkdb_data
-public/
+public/dist
+public/styles
