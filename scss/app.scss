@@ -1,0 +1,70 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+
+//Variables
+$space: 2em;
+
+//Colors
+$primary: rgb(255, 118, 97);
+$secondary: #001d44;
+$accent: #fec35a;
+
+
+h1 {
+  background-color: $primary;
+  padding: $space;
+  color: white;
+  size: 5em;
+}
+
+h2 {
+  color: $secondary;
+  size: 3em;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+input[type=range] {
+  margin:auto;
+  width:65%;
+}
+
+section {
+  padding: $space;
+}
+
+.entry-body {
+  display: block;
+  width: 100%;
+}
+
+.entry-happiness {
+  padding: $space;
+}
+
+.entry-happiness-label {
+  padding: $space;
+  position: absolute;
+  top: $space;
+
+    &.negative {
+      left:0px;
+    }
+
+    &.positive {
+      right:0px;
+    }
+}
+
+.form-happiness {
+  position: relative;
+}
+
+.panel {
+  padding: $space;
+}
+
+.panel-default>.panel-heading {
+  border-color: $accent;
+}

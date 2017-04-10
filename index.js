@@ -1,15 +1,26 @@
+
 const async = require('async');
+const bodyParser = require('body-parser');
+const config = require(__dirname + '/config.js');
 const express = require('express');
 const app = express();
 const r = require('rethinkdb');
-const bodyParser = require('body-parser');
+const sass = require("node-sass-middleware");
 
-const config = require(__dirname + '/config.js');
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+//Sass middleware
+app.use("/styles", sass({
+  src: __dirname + "/scss",
+  dest: __dirname + "/public/styles",
+  outputStyle: 'compressed'
+}));
+
+app.use(express.static("public"));
 
 // Single page
 app.get('/', function(req, res) {
@@ -40,7 +51,6 @@ app.get('/entries', function (req, res, next) {
 //Route to post to DB
 app.post('/entries', function (req, res, next) {
   const entry = req.body.data.payload;
-  entry.createdAt = r.now();
   r.table('entries').insert(entry, {returnChanges: true}).run(req.app._rdbConn, function(err, result) {
     if (err) {
       return next(err);

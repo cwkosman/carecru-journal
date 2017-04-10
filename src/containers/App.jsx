@@ -7,7 +7,6 @@ import * as EntryActions from '../actions';
 
 const App = ({ entries, actions }) => (
   <div>
-    <p>Hello</p>
     <EntryForm Actions={actions}/>
     <EntryList Entries={entries} Actions={actions}/>
   </div>

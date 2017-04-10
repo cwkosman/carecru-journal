@@ -3,3 +3,4 @@ tmp
 dist/bundle.js
 dist/bundle.js.map
 rethinkdb_data
+public/styles

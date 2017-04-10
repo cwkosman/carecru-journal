@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { calculateSentimentScore } from '../helpers/sentiment.js'
-import uuidV4 from 'uuid/v4'
+import uuidV4 from 'uuid'
 
 export function saveEntry(entryHappiness, entryBody) {
   const payload = {
