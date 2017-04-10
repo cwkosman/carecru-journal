@@ -1,12 +1,14 @@
 import axios from 'axios'
 import { calculateSentimentScore } from '../helpers/sentiment.js'
+import uuidV4 from 'uuid/v4'
 
 export function saveEntry(entryHappiness, entryBody) {
-  const entrySentimentScore = calculateSentimentScore(entryHappiness, entryBody)
   const payload = {
     happiness: entryHappiness,
     body: entryBody,
-    sentimentScore: entrySentimentScore
+    sentimentScore: calculateSentimentScore(entryHappiness, entryBody),
+    id: uuidV4(),
+    createdAt: Date.now()
   }
   return dispatch => {
     dispatch({
@@ -20,7 +22,7 @@ export function saveEntry(entryHappiness, entryBody) {
     dispatch({
       type: 'ENTRY_SUBMITTED',
       payload
-    });
+    })
     setTimeout(() =>
       dispatch({
         type: 'ENTRY_DEFAULT',
@@ -33,7 +35,7 @@ export function saveEntry(entryHappiness, entryBody) {
   }
 }
 
-export function getEntries(entryHappiness, entryBody) {
+export function getEntries() {
   return dispatch => {
     dispatch({
       type: 'REQUESTING_ENTRIES',

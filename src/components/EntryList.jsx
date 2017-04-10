@@ -11,11 +11,12 @@ export default class EntryList extends Component {
 
   render() {
     const { Entries } = this.props
+    // Entries.sort((a, b) => a.sentimentScore - b.sentimentScore);
     return (
       <section>
-        {Entries.map((entry) => {
+        {Entries.sort((a, b) => b.sentimentScore - a.sentimentScore).map((entry) => {
           return (
-              <Entry Body={entry.body} Happiness={entry.happiness} SentimentScore={entry.sentimentScore} />
+              <Entry key={entry.id} Body={entry.body} Happiness={entry.happiness} SentimentScore={entry.sentimentScore} />
             );
         })}
       </section>

@@ -24,7 +24,7 @@ app.get('/', function(req, res) {
 
 //Route to get docs from DB
 app.get('/entries', function (req, res, next) {
-  r.table('entries').orderBy('sentimentScore').run(req.app._rdbConn, function(err, cursor) {
+  r.table('entries').orderBy(r.desc('sentimentScore')).run(req.app._rdbConn, function(err, cursor) {
     if(err) {
       return next(err);
     }
