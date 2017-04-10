@@ -3,6 +3,7 @@ import Entry from './Entry.jsx';
 
 
 export default class EntryList extends Component {
+
   render() {
     const { Entries } = this.props
     return (

@@ -112,3 +112,23 @@
 2017-04-09T18:23:10.661675464 0.298465s notice: Server ready, "stibnite_dzk" fe921563-9599-485d-b7a4-7983daadf688
 2017-04-09T18:23:12.126291031 1.763081s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: Starting a new Raft election for term 6.
 2017-04-09T18:23:12.131835138 1.768625s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: This server is Raft leader for term 6. Latest log index is 17.
+2017-04-09T19:56:35.087370335 5604.724161s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-04-09T19:56:35.087536431 5604.724326s notice: Shutting down client connections...
+2017-04-09T19:56:35.087834202 5604.724624s notice: All client connections closed.
+2017-04-09T19:56:35.087847660 5604.724637s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-04-09T19:56:35.096453494 5604.733244s notice: Storage engine shut down.
+2017-04-09T19:56:36.644480741 0.092158s notice: Running rethinkdb 2.3.5 (GCC 5.4.0)...
+2017-04-09T19:56:36.649597550 0.097275s notice: Running on Linux 4.8.0-46-generic x86_64
+2017-04-09T19:56:36.649720623 0.097393s notice: Loading data from directory /home/chuck/projects/carecru-journal/rethinkdb_data
+2017-04-09T19:56:36.674206115 0.121883s info: Automatically using cache size of 5235 MB
+2017-04-09T19:56:36.678135051 0.125808s notice: Listening for intracluster connections on port 29015
+2017-04-09T19:56:36.699278258 0.146951s notice: Listening for client driver connections on port 28015
+2017-04-09T19:56:36.699519610 0.147192s notice: Listening for administrative HTTP connections on port 8080
+2017-04-09T19:56:36.699522957 0.147195s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T19:56:36.699525088 0.147198s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T19:56:36.699527654 0.147200s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T19:56:36.699536597 0.147209s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-04-09T19:56:36.699539370 0.147212s notice: Server ready, "stibnite_dzk" fe921563-9599-485d-b7a4-7983daadf688
+2017-04-09T19:56:37.841151972 1.288825s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: Starting a new Raft election for term 7.
+2017-04-09T19:56:37.846025083 1.293698s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: This server is Raft leader for term 7. Latest log index is 20.
+2017-04-09T20:10:51.259684143 854.707357s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: Configuration is changing.
