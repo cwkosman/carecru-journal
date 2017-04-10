@@ -1,0 +1,114 @@
+2017-04-09T17:21:11.348368585 0.108202s notice: Recursively removing directory /home/chuck/projects/carecru-journal/rethinkdb_data/tmp
+2017-04-09T17:21:11.372326166 0.132162s notice: Initializing directory /home/chuck/projects/carecru-journal/rethinkdb_data
+2017-04-09T17:21:11.372743653 0.132576s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/chuck/projects/carecru-journal/rethinkdb_data' did not already exist or is empty.)
+2017-04-09T17:21:11.372782597 0.132615s notice: Running rethinkdb 2.3.5 (GCC 5.4.0)...
+2017-04-09T17:21:11.381069405 0.140905s notice: Running on Linux 4.8.0-46-generic x86_64
+2017-04-09T17:21:11.381130537 0.140963s notice: Loading data from directory /home/chuck/projects/carecru-journal/rethinkdb_data
+2017-04-09T17:21:11.421653317 0.181486s info: Automatically using cache size of 5932 MB
+2017-04-09T17:21:11.422840752 0.182673s notice: Listening for intracluster connections on port 29015
+2017-04-09T17:21:11.428243383 0.188076s notice: Listening for client driver connections on port 28015
+2017-04-09T17:21:11.428324862 0.188157s notice: Listening for administrative HTTP connections on port 8080
+2017-04-09T17:21:11.428326975 0.188159s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T17:21:11.428329615 0.188162s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T17:21:11.428331174 0.188163s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T17:21:11.428333453 0.188165s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-04-09T17:21:11.428335379 0.188167s notice: Server ready, "stibnite_dzk" fe921563-9599-485d-b7a4-7983daadf688
+2017-04-09T17:21:17.155709827 5.915542s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: Starting a new Raft election for term 1.
+2017-04-09T17:21:17.159585820 5.919418s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: Added replica on this server.
+2017-04-09T17:21:17.160414518 5.920247s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: This server is Raft leader for term 1. Latest log index is 0.
+2017-04-09T17:21:17.426421471 6.186254s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: Configuration is changing.
+2017-04-09T17:27:51.520513137 400.280345s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: Configuration is changing.
+2017-04-09T17:28:40.819649261 449.579483s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-04-09T17:28:40.819827994 449.579660s notice: Shutting down client connections...
+2017-04-09T17:28:40.819921358 449.579754s notice: All client connections closed.
+2017-04-09T17:28:40.819925445 449.579758s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-04-09T17:28:40.828749319 449.588582s notice: Storage engine shut down.
+2017-04-09T17:28:41.404806858 0.089904s notice: Running rethinkdb 2.3.5 (GCC 5.4.0)...
+2017-04-09T17:28:41.410604435 0.095702s notice: Running on Linux 4.8.0-46-generic x86_64
+2017-04-09T17:28:41.410727024 0.095819s notice: Loading data from directory /home/chuck/projects/carecru-journal/rethinkdb_data
+2017-04-09T17:28:41.451156376 0.136254s info: Automatically using cache size of 5843 MB
+2017-04-09T17:28:41.453074652 0.138167s notice: Listening for intracluster connections on port 29015
+2017-04-09T17:28:41.507717716 0.192810s notice: Listening for client driver connections on port 28015
+2017-04-09T17:28:41.508250233 0.193342s notice: Listening for administrative HTTP connections on port 8080
+2017-04-09T17:28:41.508256958 0.193349s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T17:28:41.508262057 0.193354s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T17:28:41.508281805 0.193374s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T17:28:41.508286539 0.193378s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-04-09T17:28:41.508292025 0.193384s notice: Server ready, "stibnite_dzk" fe921563-9599-485d-b7a4-7983daadf688
+2017-04-09T17:28:43.008658673 1.693751s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: Starting a new Raft election for term 2.
+2017-04-09T17:28:43.022436831 1.707529s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: This server is Raft leader for term 2. Latest log index is 5.
+2017-04-09T17:30:34.495236587 113.180330s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-04-09T17:30:34.495299730 113.180391s notice: Shutting down client connections...
+2017-04-09T17:30:34.495422203 113.180514s notice: All client connections closed.
+2017-04-09T17:30:34.495442737 113.180534s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-04-09T17:30:34.496654127 113.181746s notice: Storage engine shut down.
+2017-04-09T17:33:56.185538213 0.094977s notice: Running rethinkdb 2.3.5 (GCC 5.4.0)...
+2017-04-09T17:33:56.188230032 0.097667s notice: Running on Linux 4.8.0-46-generic x86_64
+2017-04-09T17:33:56.188386494 0.097820s notice: Loading data from directory /home/chuck/projects/carecru-journal/rethinkdb_data
+2017-04-09T17:33:56.215207011 0.124643s info: Automatically using cache size of 5695 MB
+2017-04-09T17:33:56.215708708 0.125143s notice: Listening for intracluster connections on port 29015
+2017-04-09T17:33:56.249225325 0.158660s notice: Listening for client driver connections on port 28015
+2017-04-09T17:33:56.249569388 0.159004s notice: Listening for administrative HTTP connections on port 8080
+2017-04-09T17:33:56.249581599 0.159015s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T17:33:56.249584239 0.159018s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T17:33:56.249586676 0.159020s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T17:33:56.249594159 0.159028s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-04-09T17:33:56.249596647 0.159030s notice: Server ready, "stibnite_dzk" fe921563-9599-485d-b7a4-7983daadf688
+2017-04-09T17:33:57.321944424 1.231379s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: Starting a new Raft election for term 3.
+2017-04-09T17:33:57.326396167 1.235831s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: This server is Raft leader for term 3. Latest log index is 8.
+2017-04-09T17:58:01.572507719 1445.481942s notice: Server got SIGTERM from pid 10207, uid 1000; shutting down...
+2017-04-09T17:58:01.572659636 1445.482094s notice: Shutting down client connections...
+2017-04-09T17:58:01.572990563 1445.482425s notice: All client connections closed.
+2017-04-09T17:58:01.573002083 1445.482436s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-04-09T17:58:01.576180715 1445.485615s notice: Storage engine shut down.
+2017-04-09T18:06:32.347447861 0.089110s notice: Running rethinkdb 2.3.5 (GCC 5.4.0)...
+2017-04-09T18:06:32.352669980 0.094326s notice: Running on Linux 4.8.0-46-generic x86_64
+2017-04-09T18:06:32.352806897 0.094458s notice: Loading data from directory /home/chuck/projects/carecru-journal/rethinkdb_data
+2017-04-09T18:06:32.373032117 0.114686s info: Automatically using cache size of 5230 MB
+2017-04-09T18:06:32.379007597 0.120659s notice: Listening for intracluster connections on port 29015
+2017-04-09T18:06:32.408289695 0.149941s notice: Listening for client driver connections on port 28015
+2017-04-09T18:06:32.408380988 0.150032s notice: Listening for administrative HTTP connections on port 8080
+2017-04-09T18:06:32.408382679 0.150033s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T18:06:32.408384023 0.150035s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T18:06:32.408387941 0.150039s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T18:06:32.408389458 0.150040s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-04-09T18:06:32.408390548 0.150041s notice: Server ready, "stibnite_dzk" fe921563-9599-485d-b7a4-7983daadf688
+2017-04-09T18:06:33.921641139 1.663292s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: Starting a new Raft election for term 4.
+2017-04-09T18:06:33.925566102 1.667218s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: This server is Raft leader for term 4. Latest log index is 11.
+2017-04-09T18:17:32.413833052 660.155484s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-04-09T18:17:32.413904642 660.155556s notice: Shutting down client connections...
+2017-04-09T18:17:32.413994560 660.155645s notice: All client connections closed.
+2017-04-09T18:17:32.413999329 660.155650s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-04-09T18:17:32.415445750 660.157097s notice: Storage engine shut down.
+2017-04-09T18:17:43.251661317 0.090351s notice: Running rethinkdb 2.3.5 (GCC 5.4.0)...
+2017-04-09T18:17:43.256788921 0.095479s notice: Running on Linux 4.8.0-46-generic x86_64
+2017-04-09T18:17:43.256920990 0.095606s notice: Loading data from directory /home/chuck/projects/carecru-journal/rethinkdb_data
+2017-04-09T18:17:43.279717501 0.118404s info: Automatically using cache size of 5507 MB
+2017-04-09T18:17:43.283638278 0.122323s notice: Listening for intracluster connections on port 29015
+2017-04-09T18:17:43.309872642 0.148557s notice: Listening for client driver connections on port 28015
+2017-04-09T18:17:43.309973107 0.148657s notice: Listening for administrative HTTP connections on port 8080
+2017-04-09T18:17:43.309974397 0.148659s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T18:17:43.309976259 0.148661s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T18:17:43.309980413 0.148665s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T18:17:43.309981959 0.148667s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-04-09T18:17:43.309983446 0.148668s notice: Server ready, "stibnite_dzk" fe921563-9599-485d-b7a4-7983daadf688
+2017-04-09T18:17:44.756922632 1.595608s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: Starting a new Raft election for term 5.
+2017-04-09T18:17:44.761586425 1.600271s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: This server is Raft leader for term 5. Latest log index is 14.
+2017-04-09T18:17:55.897772376 12.736457s notice: Server got SIGTERM from pid 1, uid 0; shutting down...
+2017-04-09T18:17:55.897846519 12.736531s notice: Shutting down client connections...
+2017-04-09T18:17:55.902546574 12.741232s notice: All client connections closed.
+2017-04-09T18:17:55.902557656 12.741242s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-04-09T18:23:10.497819163 0.134624s notice: Running rethinkdb 2.3.5 (GCC 5.4.0)...
+2017-04-09T18:23:10.502782474 0.139577s notice: Running on Linux 4.8.0-46-generic x86_64
+2017-04-09T18:23:10.502910391 0.139700s notice: Loading data from directory /home/chuck/projects/carecru-journal/rethinkdb_data
+2017-04-09T18:23:10.562809525 0.199610s info: Automatically using cache size of 6385 MB
+2017-04-09T18:23:10.564716246 0.201506s notice: Listening for intracluster connections on port 29015
+2017-04-09T18:23:10.661158269 0.297949s notice: Listening for client driver connections on port 28015
+2017-04-09T18:23:10.661620189 0.298410s notice: Listening for administrative HTTP connections on port 8080
+2017-04-09T18:23:10.661643236 0.298433s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T18:23:10.661647946 0.298437s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T18:23:10.661662216 0.298452s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-09T18:23:10.661667125 0.298457s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-04-09T18:23:10.661675464 0.298465s notice: Server ready, "stibnite_dzk" fe921563-9599-485d-b7a4-7983daadf688
+2017-04-09T18:23:12.126291031 1.763081s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: Starting a new Raft election for term 6.
+2017-04-09T18:23:12.131835138 1.768625s info: Table c446f9d2-ab7f-4b28-a982-34576a294f55: This server is Raft leader for term 6. Latest log index is 17.
