@@ -4,6 +4,11 @@ import Entry from './Entry.jsx';
 
 export default class EntryList extends Component {
 
+  componentDidMount() {
+    const { Actions } = this.props
+    Actions.getEntries();
+  }
+
   render() {
     const { Entries } = this.props
     return (

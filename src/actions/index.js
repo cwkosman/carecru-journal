@@ -10,16 +10,38 @@ export function saveEntry(entryHappiness, entryBody) {
   }
   return dispatch => {
     dispatch({
-      type: 'SUBMIT_ENTRY',
-      payload
+      type: 'SUBMITTING_ENTRY',
     })
-    axios.post('/new', {
+    axios.post('/entries', {
       data: {
         payload
       }
-    }).then((response) => {
+    }).then(() => {
     dispatch({
-      type: 'DUMMY',
+      type: 'ENTRY_SUBMITTED',
+      payload
+    });
+    setTimeout(() =>
+      dispatch({
+        type: 'ENTRY_DEFAULT',
+      }), 3000)
+    }).catch(() => {
+      dispatch({
+        type: 'ENTRY_ERROR'
+      })
+    })
+  }
+}
+
+export function getEntries(entryHappiness, entryBody) {
+  return dispatch => {
+    dispatch({
+      type: 'REQUESTING_ENTRIES',
+    })
+    axios.get('/entries').then((response) => {
+    dispatch({
+      type: 'RECEIVED_ENTRIES',
+      payload: response.data
     })
   })
   }

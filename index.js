@@ -23,10 +23,22 @@ app.get('/', function(req, res) {
 });
 
 //Route to get docs from DB
-
+app.get('/entries', function (req, res, next) {
+  r.table('entries').orderBy('sentimentScore').run(req.app._rdbConn, function(err, cursor) {
+    if(err) {
+      return next(err);
+    }
+    cursor.toArray(function(err, result) {
+      if(err) {
+        return next(err);
+      }
+      res.json(result);
+    });
+  });
+});
 
 //Route to post to DB
-app.post('/new', function (req, res, next) {
+app.post('/entries', function (req, res, next) {
   const entry = req.body.data.payload;
   entry.createdAt = r.now();
   r.table('entries').insert(entry, {returnChanges: true}).run(req.app._rdbConn, function(err, result) {
